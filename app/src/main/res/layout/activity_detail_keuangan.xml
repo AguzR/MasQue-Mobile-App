@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".DetailKeuanganActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@color/colorBaseApp">
+
+        <TextView
+            android:id="@+id/title_bar"
+            android:textColor="@color/colorBlack"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Detail Keuangan" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/cardInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/layCont"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp">
+
+                        <TextView
+                            android:id="@+id/lblBln"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Detail keuangan pada bulan"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/nameBulan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lblBln"
+                            android:text="JULI"
+                            android:textSize="40sp" />
+
+                        <TextView
+                            android:id="@+id/tahun"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nameBulan"
+                            android:gravity="bottom"
+                            android:text="2019"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="140dp"
+                        android:layout_height="100dp"
+                        android:layout_alignRight="@id/layCont"
+                        android:background="@color/colorBaseApp"
+                        android:gravity="center"
+                        android:padding="5dp">
+
+                        <TextView
+                            android:id="@+id/lbl2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SALDO"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/jumlah"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/lbl2"
+                            android:text="Rp20000000,00"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cardInfo"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+
+                    <TextView
+                        android:id="@+id/detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="Detail"
+                        android:textSize="20sp" />
+
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@id/detail"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#2b2929"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutSisa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/line1"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/labelSisa"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Saldo bulan lalu"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:id="@+id/line7"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="#646668"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/saldo"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layPem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layoutSisa"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/labelPem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pemasukan"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:id="@+id/line2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="#646668"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/pemasukan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layKPem"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layPem"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/labelKPem"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Keterangan"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:id="@+id/line3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="#646668"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/ketPemasukan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layPeng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layKPem"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/labelPeng"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Pengeluaran"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:id="@+id/line4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="#646668"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/pengeluaran"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutKPeng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layPeng"
+                        android:layout_marginTop="15dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/labelKPeng"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Keterangan"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:id="@+id/line5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="#646668"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/ketPengeluaran"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutTot"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layoutKPeng"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/labelTot"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Keuangan saat ini"
+                            android:textSize="16sp" />
+
+                        <View
+                            android:id="@+id/line6"
+                            android:layout_width="match_parent"
+                            android:layout_height="0.5dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="#646668"
+                            android:visibility="visible" />
+
+                        <TextView
+                            android:id="@+id/saatIni"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

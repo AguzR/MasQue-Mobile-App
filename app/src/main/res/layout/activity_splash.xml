@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/splashmasqueb"
+    tools:context=".SplashActivity">
+
+    <ImageView
+        android:id="@+id/iconSplash"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/ic_icon_dashboard" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iconSplash"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="MasQue"
+        android:textColor="@color/colorWhite"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

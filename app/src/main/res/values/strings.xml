@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">MasQue</string>
+    <string name="FACEBOOK_APP_ID">2389007268014173</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">42281b3fe783bda9a457033e52465f76</string>
+
+    <string name="report_send">
+        Dengan mengirimkan pesan ini, anda sudah sangat membantu pihak Developer untuk mengembangkan aplikasi ini menjadi lebih baik lagi.
+    </string>
+
+    <string name="deskripsi_apps">
+        MasQue merupakan aplikasi Masjid berbasis Android, aplikasi ini dapat menampilkan kegiatan masjid di Kabupaten Tegal,
+        Menampilkan informasi masjid, keuangan masjid, dan dapat mengiriman pengaduan kepada masjid.
+    </string>
+
+    <string name="default_ket">
+        Kegiatan yang akan dihadiri oleh KH. Mukmin Arif dari Kediri, kegiatan akan dilangsungkan di alun-alun Slawi...
+    </string>
+
+    <string name="pesan_masjid">
+        Form ini digunakan untuk mengirimkan pesan atau pengaduan kepada Masjid\n
+        Kamu bisa memasukan foto sebagai bukti dan menuliskan pesan terkait dengan pengaduanmu, seperti\n
+        1. Ketersediaan Tempat Parkir \n
+        2. Kebersihan Tempat Ibadah \n
+        3. Kebersihan Tempat Wudhu \n
+        4. Kebersihan Toilet \n
+        5. Dan Fasilitas atau Informasi lainnya.
+    </string>
+
+    <string name="pesan_txt">
+        Anda dapat mengirimkan pesan ini kepada Masjid yang sudah anda pilih \n
+        Pesan dapat berupa laporan tentang fasilitas yang ada di Masjid \n
+    </string>
+
+    <string name="report">
+        Dengan mengirimkan pesan report ini, anda sudah turut membantu pihak developer dalam mengembangkan aplikasi ini. \n
+        Silahkan beri masukan atau saranmu untuk aplikasi ini.
+    </string>
+
+    // Answer Content Login and Register
+    <string name="answer_login">
+        Jawaban :\n
+        1. Pergi ke Halaman Home\n
+        2. Pilih icon profile di pojok kanan atas\n
+        3. Jika kamu belum login, maka akan masuk ke form login
+    </string>
+    <string name="answer_regist">
+        Jawaban :\n
+        1. Pergi ke Halaman Home\n
+        2. Pilih icon profile di pojok kanan atas\n
+        3. Jika kamu belum login, maka akan masuk ke form login\n
+        4. Pilih daftar.
+    </string>
+
+    // Answer Content Profile
+    <string name="answer_change">
+        Jawaban \n
+        1. Pilih icon Profil di pojok kanan atas pada Halaman Home\n
+        2. Pilih icon edit di pojok kanan atas untuk merubah nama atau nomor telepon\n
+        3. Jika sudah pilih icon centang pada pojok kanan atas\n
+    </string>
+    <string name="answer_pesanku">
+        Jawaban \n
+        1. Pilih icon Profil di pojok kanan atas pada Halaman Home\n
+        2. Pada halaman Profil pilih Pesan\n
+        3. Seluruh pesanmu akan ditampilkan\n
+    </string>
+    <string name="answer_myreport">
+        Jawaban \n
+        1. Pilih icon Profil di pojok kanan atas pada Halaman Home\n
+        2. Pada halaman Profil pilih Report\n
+        3. Seluruh reportmu akan ditampilkan\n
+    </string>
+
+
+    // Answer Content Info Aplikasi
+    <string name="answer_infoap">
+        Jawaban \n
+        1. Pilih Info Aplikasi pada Halaman Home\n
+        2. Pilih Info Lengkap untuk melhat informasi lengkap tentang aplikasi
+    </string>
+
+
+    //Answer Content Kegiatan
+    <string name="answer_lokasi">
+        Jawaban :\n
+        1. Pilih satu kegiatan pada Halaman Kegiatan\n
+        2. Pada Halaman Detail Kegiatan pilih Lihat Lokasi\n
+    </string>
+    <string name="answer_track">
+        Jawaban :\n
+        1. Pilih satu kegiatan pada Halaman Kegiatan\n
+        2. Pada Halaman Detail Kegiatan pilih Lihat Lokasi\n
+        3. Pada Halaman Lokasi Kegiatan, tap lokasi nanti akan muncul Nama Lokasi\n
+        3. Pilih icon direction atau arah di kanan bawah Halaman Lokasi Kegiatan\n
+        4. Nanti anda akan diarahkan langsung ke aplikasi Google Maps.
+    </string>
+
+
+    // Answer Content Masjid
+    <string name="answer_pesanm">
+        Jawaban :\n
+        1. Pilih ke Menu Masjid di Halaman Home\n
+        2. Kemudian pilih menu salah satu masjid\n
+        3. Pada halaman Detail Masjid pilih menu Pesan\n
+        4. Kemudian masukan foto dan pesanmu untuk masjid, jika sudah kirimkan\n
+    </string>
+    <string name="answer_keg">
+        Jawaban \n
+        1. Pilih ke Menu Masjid di Halaman Home\n
+        2. Kemudian pilih salah satu masjid\n
+        3. Pada halaman Detail Masjid pilih menu Kegiatan\n
+    </string>
+    <string name="answer_keglalu">
+        Jawaban \n
+        1. Pilih ke Menu Masjid di Halaman Home\n
+        2. Kemudian pilih salah satu masjid\n
+        3. Pada halaman Detail Masjid pilih menu Kegiatan\n
+        4. Kemudian pilih Kegiatan yang sudah berlalu\n
+    </string>
+    <string name="answer_uangmas">
+        Jawaban \n
+        1. Pilih ke Menu Masjid di Halaman Home\n
+        2. Pada halaman Detail Masjid pilih menu Keuangan\n
+        3. Kemudian pilih salah satu masjid\n
+        4. Pilih salah satu bulan untuk melihat detail keuangan pada bulan tersebut\n
+    </string>
+
+
+    // Answer Content Report
+    <string name="answer_report">
+        Jawaban \n
+        1. Pada halaman Home pilih menu Report\n
+        2. Kemudian masukan pesanmu\n
+        3. Setelah itu kirim\n
+    </string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="title_activity_welcome">WelcomeActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+</resources>

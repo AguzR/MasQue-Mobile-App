@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back_infoapp"
+    tools:context=".InfoAppActivity">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_apps_profilw" />
+
+        <TextView
+            android:id="@+id/nameApps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/img"
+            android:layout_marginTop="10dp"
+            android:text="MasQue App"
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameApps"
+            android:layout_centerHorizontal="true"
+            android:text="Beta Version."
+            android:textColor="@color/colorWhite"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="#32ffffff"
+        android:padding="5dp"
+        android:text="masqueapps.official@gmail.com"
+        android:textColor="@color/colorWhite" />
+    <!--<TextView-->
+    <!--android:id="@+id/detailInfo"-->
+    <!--android:layout_margin="10dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:padding="5dp"-->
+    <!--android:text="Info Lengkap"-->
+    <!--android:background="@drawable/btn_outline"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content" />-->
+</RelativeLayout>

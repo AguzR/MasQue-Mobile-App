@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp">
+
+            <FrameLayout
+                android:layout_width="5dp"
+                android:layout_height="120dp"
+                android:background="@color/colorLimeGreen"/>
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="120dp">
+
+                <LinearLayout
+                    android:id="@+id/layDay"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical"
+                    android:layout_width="130dp"
+                    android:layout_height="120dp">
+
+                    <TextView
+                        android:id="@+id/labelDay"
+                        android:text="Setiap Hari"
+                        android:textSize="24sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="125dp"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@+id/day"
+                        android:layout_below="@id/labelDay"
+                        android:text="Minggu"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="140dp"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_toRightOf="@id/layDay"
+                    android:background="@color/colorLimeGreen"
+                    android:layout_width="2dp"
+                    android:layout_height="140dp"/>
+
+                <TextView
+                    android:id="@+id/name"
+                    android:layout_toRightOf="@id/line"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="16sp"
+                    android:textColor="@color/colorBlack"
+                    android:text="Nama Kegiatan Rutinnya"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <LinearLayout
+                    android:layout_marginTop="5dp"
+                    android:background="#f5f2f2"
+                    android:padding="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toRightOf="@id/line"
+                    android:layout_below="@id/name"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/ic_label_outline"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp" />
+
+                        <TextView
+                            android:id="@+id/tempat"
+                            android:layout_marginLeft="3dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="Tempat Kegiatan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:src="@drawable/ic_label_outline"
+                            android:layout_width="25dp"
+                            android:layout_height="25dp" />
+
+                        <TextView
+                            android:id="@+id/waktu"
+                            android:layout_marginLeft="3dp"
+                            android:layout_gravity="center_vertical"
+                            android:text="Waktu Kegiatan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

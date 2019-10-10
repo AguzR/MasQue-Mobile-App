@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.official.mq.masque">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".app.AppController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_apps_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true">
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/BlueTheme" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".HomeActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".ProfileActivity"
+            android:theme="@style/BlueTheme" />
+        <activity
+            android:name=".KegiatanActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".MasjidActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".DetailKegiatanActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".DetailMasjidActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".EventActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".MasjidKegiatanActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".PesanActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".StructureActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".KeuanganActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".BantuanActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".PesanMasActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".DetailKeuanganActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".LokasiKegiatanActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".InfoAppActivity"
+            android:theme="@style/BlueTheme" />
+        <activity
+            android:name=".DetailAppActivity"
+            android:theme="@style/BlueTheme" />
+        <activity
+            android:name=".MasjidKegiatanLaluActivity"
+            android:theme="@style/AllTheme" />
+        <activity
+            android:name=".LokasiMasjidActivity"
+            android:theme="@style/AllTheme" />
+
+        <meta-data
+            android:name="com.facebook.accountkit.ApplicationName"
+            android:value="@string/app_name" />
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/FACEBOOK_APP_ID" />
+        <meta-data
+            android:name="com.facebook.accountkit.ClientToken"
+            android:value="@string/ACCOUNT_KIT_CLIENT_TOKEN" />
+
+        <activity android:name="com.facebook.accountkit.ui.AccountKitActivity" />
+
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/. 
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".MainActivity"
+            android:label="MasQue"
+            android:theme="@style/NextTheme" />
+        <activity android:name=".FindMasActivity"></activity>
+    </application>
+
+</manifest>

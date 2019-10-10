@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".DetailKegiatanActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:minHeight="?attr/actionBarSize"
+        app:titleTextColor="@color/colorBaseApp">
+
+        <TextView
+            android:id="@+id/title_bar"
+            android:textColor="@color/colorBlack"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Detail Kegiatan" />
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <RelativeLayout
+                    android:id="@+id/layPro"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imageMasjid"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/iconaccount" />
+
+                    <LinearLayout
+                        android:layout_centerVertical="true"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toRightOf="@id/imageMasjid"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/nameMasjid"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Majid Name"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="18sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/posted"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="28/01/2019 pukul 19:00" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/nameKegiatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layPro"
+                    android:layout_marginTop="10dp"
+                    android:text="Tabligh Akbar"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/ketKegiatan"
+                    android:layout_below="@id/nameKegiatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorBlack"
+                    android:text="Kegiatan yang akan dihadiri oleh KH. Mukmin Arif dari Kediri, kegiatan akan dilangsungkan di Lapangan Dukuhturi pada hari Senin 28 Agustus 2019 pada pukul 20.00 WIB sampai dengan selesai"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:id="@+id/layContent"
+                    android:orientation="vertical"
+                    android:layout_below="@id/ketKegiatan"
+                    android:layout_marginTop="5dp"
+                    android:padding="10dp"
+                    android:background="#f7f3f3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/LokKeg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Tempat"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:textColor="@color/colorBlack"
+                            android:id="@+id/tempatKegiatan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layNameKeg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/LokKeg"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dilaksanakan pada"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:textColor="@color/colorBlack"
+                            android:id="@+id/tanggalKegiatan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layWaktuKeg"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/layNameKeg"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:textColor="@color/colorBlack"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Waktu Kegiatan"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:textColor="@color/colorBlack"
+                            android:id="@+id/waktuKegiatan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/imageKegiatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="256dp"
+                    android:layout_below="@id/layContent"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/no_image" />
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/btnTracking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@color/colorBaseApp"
+                    android:text="Lihat Lokasi"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

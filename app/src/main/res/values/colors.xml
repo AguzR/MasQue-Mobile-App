@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorBaseApp">#1E90FF</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorStatusBar">#cccccc</color>
+    <color name="colorTransparan">#00ffffff</color>
+    <color name="colorBlack">#c8000000</color>
+    <color name="colorLimeGreen">#32CD32</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>
