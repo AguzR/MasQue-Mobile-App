@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MasQue</string>
-    <string name="FACEBOOK_APP_ID">2389007268014173</string>
-    <string name="ACCOUNT_KIT_CLIENT_TOKEN">42281b3fe783bda9a457033e52465f76</string>
+    <string name="FACEBOOK_APP_ID">Your Fb ID</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">Your Account Kit Token</string>
 
     <string name="report_send">
         Dengan mengirimkan pesan ini, anda sudah sangat membantu pihak Developer untuk mengembangkan aplikasi ini menjadi lebih baik lagi.
